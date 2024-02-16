@@ -10,7 +10,6 @@
 
 
 u8 Global_u8RacketPattern[] = {0x0E, 0x11, 0x11, 0x11, 0x0E, 0x04, 0x04, 0x04, 0x04, 0x04};
-u8 b[] = {0x0E, 0x015, 0x04, 0x04, 0x0A, 0x11, 0x00, 0x00, 0x00, 0x00};
 u8 Global_u8BallPattern[] ={0x0E, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x0E};
 u8 x = 0, y = 1, l = 2;
 u8 Global_u8Player1Flag = 0, Global_u8Player2Flag = 0;
@@ -53,7 +52,9 @@ int main(void)
 			 {
 				 x = 1, y = 14;
 			 }
+			 
 			 Global_u8Player1Flag = 0, Global_u8Player2Flag = 0;
+			 
 			 while(1)
 			 {
 				 /*
@@ -80,11 +81,8 @@ int main(void)
 				 /*
 				 * Player2
 				 */
-				 if(Global_u8Player2Flag == 1)
-				 {
-
+				 if(Global_u8Player2Flag == 1){
 					Global_u8Player2Flag = 0;
-
 				 }
 				 else if(Global_u8Player2Flag == 0)
 				 {
