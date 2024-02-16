@@ -18,4 +18,6 @@
 #define Blocking					1
 #define NonBLocking					2
 
+
+
 #endif /* LM35_PRIVATE_H_ */

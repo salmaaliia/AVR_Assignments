@@ -15,11 +15,7 @@
 */
 #define ADC_REF_SELECT				AVCC
 
-/*Adjustment select
-** options:	RIGHT_ADJUST
-**			LEFT_ADJUST
-*/
-#define ADC_ADJUSTMENT_SELECT		RIGHT_ADJUST
+
 
 /*ADC status
 **options:	ADC_DISABLE

@@ -14,6 +14,11 @@ u8 ADC_u8BlockingRead(u8 Copy_u8Cannel, u16 *Copy_u16Reading);
 
 u8 ADC_u8NonBLockingRead(u8 Copy_u8Cannel, u16 *Copy_pu16Reading, void(*Copy_pvNotificationFunmc)(u16));
 
+/*Adjustment select
+** options:	RIGHT_ADJUST
+**			LEFT_ADJUST
+*/
+#define ADC_ADJUSTMENT_SELECT		RIGHT_ADJUST
 
 
 /*ADC Single Ended Input Channels*/

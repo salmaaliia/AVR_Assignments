@@ -9,9 +9,10 @@
 #ifndef LM35_INTERFACE_H_
 #define LM35_INTERFACE_H_
 
-void LM35_voidInit(u8 Copy_u8PostiveChanne);
+u8 LM35_GetTempReadingBlocking(u8 Copy_u8Channel, u16* Copy_u16Reading);
+u8 LM35_GetTempReadingNonBlocking(u8 Copy_u8Channel, u16* Copy_u16Reading, void(*Copy_pvNotificationFunmc)(u16));
 
-u8 LM35_u8GetTemp(u8 , f32*);
+
 
 /*Channels*/
 #define	channel0					ADC0				

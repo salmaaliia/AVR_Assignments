@@ -15,7 +15,7 @@
 
 /*Variables for Asynchronous single function*/
 static u16* ADC_pu16Reading = NULL;
-static void(*ADC_CallBackpvNotificationFunc)(u16 ) = NULL;
+static void(*ADC_CallBackpvNotificationFunc)(u16*) = NULL;
 
 /*Busy state Variable for ADC*/
 static u8 ADC_u8BusyState =IDLE;
